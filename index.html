@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./login.html">
+        <label>Name:</label>
+        <input type="name" placeholder="Enter name" name="name" required><br>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email" name="email" required><br>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" name="password" required><br>
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="Confirm password" name="confirm_password" required><br>
+        <label>Mobile number:</label>
+        <input type="number" placeholder="Enter mobile number" name="modile number" required><br>
+        <labelc>Address:</label>
+        <textarea id="address" placeholder="Enter your address" name="address"></textarea><br>
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="gmale" name="gender" />
+            <label for="gmale">Male</label>
+            <input type="radio" id="gfemale" name="gender" />
+            <label for="gfemale">Female</label>
+        </div>
+        <div>
+            <label>Educational Details:</label><br>
+            <input type="checkbox" value="SSC" />SCC
+            <input type="checkbox" value="Inter" />Intermediate
+            <input type="checkbox" value="Diploma" />Diploma
+            <input type="checkbox" value="Btech" />Btech
+        </div>
+        <div>
+            <label>City:</label>
+            <select>
+                <option value="" required>Select your city </option>
+                <option value="Hyderabad">hyderabad</option>
+                <option value="Adilabad">adilabad</option>
+                <option value="Vizag">vizag</option>
+            </select>
+        </div>
+        <br>
+        <div align="justify">
+            <button>Register</button>
+        </div>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+</body>
+
+</html>
