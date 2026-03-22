@@ -4,52 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+
+    <style>
+        body {
+            background-color: #79CBCA;
+            background-size: cover;
+            min-height: 100vh;
+            background-image: url("https://www.pngkey.com/png/full/203-2035339_register-user-register-online-icon-png.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center right;
+            background-size: 25%;
+
+        }
+
+        .parent-container {
+            background-color: white;
+            width: 40%;
+            text-align: center;
+            padding: 5px 10px 10px 10px;
+            font-family: sans-serif;
+            margin: 5% auto 0% auto;
+            border-radius: 15px;
+        }
+
+        .parent-container a {
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .form-field {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .form-field input,
+        textarea,
+        select {
+            padding: 10px;
+            width: 95%;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .select-city {
+            text-align: left;
+            width: 100%;
+        }
+
+        .form-checkbox,
+        .form-radio {
+            width: 50%;
+            margin: 10px 0;
+            text-align: left;
+            font-size: 0.8rem;
+        }
+
+        .form-checkbox label {
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .login-link {
+            text-align: center;
+            font-size: 0.8rem;
+
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #77A1D3, #79CBCA, #77A1D3);
+            padding: 12px;
+            width: 95%;
+            text-transform: uppercase;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            margin: 10px auto;
+            margin: bottom 10px;
+            cursor: pointer;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="./login.html">
-        <label>Name:</label>
-        <input type="name" placeholder="Enter name" name="name" required><br>
-        <label>Email:</label>
-        <input type="email" placeholder="Enter email" name="email" required><br>
-        <label>Password:</label>
-        <input type="password" placeholder="Enter password" name="password" required><br>
-        <label>Confirm Password:</label>
-        <input type="password" placeholder="Confirm password" name="confirm_password" required><br>
-        <label>Mobile number:</label>
-        <input type="number" placeholder="Enter mobile number" name="modile number" required><br>
-        <labelc>Address:</label>
-        <textarea id="address" placeholder="Enter your address" name="address"></textarea><br>
-        <div>
-            <label>Gender:</label><br>
-            <input type="radio" id="gmale" name="gender" />
-            <label for="gmale">Male</label>
-            <input type="radio" id="gfemale" name="gender" />
-            <label for="gfemale">Female</label>
+
+    <form class="parent-container" action="./login.html">
+        <h2>REGISTER PAGE</h2>
+
+        <div class="form-field">
+            <input type="text" placeholder="Enter name" name="name" required>
         </div>
-        <div>
-            <label>Educational Details:</label><br>
-            <input type="checkbox" value="SSC" />SCC
-            <input type="checkbox" value="Inter" />Intermediate
-            <input type="checkbox" value="Diploma" />Diploma
-            <input type="checkbox" value="Btech" />Btech
+
+        <div class="form-field">
+            <input type="email" placeholder="Enter email" name="email" required>
         </div>
-        <div>
-            <label>City:</label>
-            <select>
-                <option value="" required>Select your city </option>
-                <option value="Hyderabad">hyderabad</option>
-                <option value="Adilabad">adilabad</option>
-                <option value="Vizag">vizag</option>
+
+        <div class="form-field">
+            <input type="password" placeholder="Enter password" name="password" required>
+        </div>
+
+        <div class="form-field">
+            <input type="password" placeholder="Confirm password" required>
+        </div>
+
+        <div class="form-field">
+            <input type="tel" placeholder="Enter mobile number" name="mobile_number" required>
+        </div>
+
+        <div class="form-field">
+            <textarea placeholder="Enter your address" name="address"></textarea>
+        </div>
+
+        <div class="form-radio">
+            <p>Gender</p>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <div class="form-checkbox">
+            <p>Educational Details:</p>
+            <input type="checkbox"> SSC
+            <input type="checkbox"> Intermediate
+            <input type="checkbox"> Diploma
+            <input type="checkbox"> Btech
+        </div>
+
+        <div class="form-field select-city">
+            <select required>
+                <option value="">Select your city</option>
+                <option>Hyderabad</option>
+                <option>Adilabad</option>
+                <option>Vizag</option>
             </select>
         </div>
-        <br>
-        <div align="justify">
-            <button>Register</button>
+
+        <div class="form-checkbox">
+            <input type="checkbox" required>
+            I agree to the <a href="">Terms of Service</a>
         </div>
-        <p>Already have an account? <a href="login.html">Login</a></p>
+
+        <button class="btn-grad">Register</button>
+
+        <div class="form-field login-link">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+
     </form>
+
 </body>
 
 </html>
